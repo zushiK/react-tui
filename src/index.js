@@ -32,6 +32,7 @@ export default class Calendar extends React.Component {
   calendarInst = null;
 
   componentDidMount() {
+    console.log("stitch calendar component mounted");
     const {schedules = [], view, ...restProps} = this.props;
     const rootElement = this.getRootElement();
 
